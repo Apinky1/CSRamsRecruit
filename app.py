@@ -116,7 +116,7 @@ def red_style(content):
     font-family: Arial, sans-serif;
     background:
         linear-gradient(rgba(92, 0, 0, 0.75), rgba(92, 0, 0, 0.75)),
-        url('/static/ra3.jpg');
+        url('/static/images/ra3.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -291,8 +291,9 @@ def red_style(content):
 
         .gallery-card img {{
             width: 100%;
-            height: 320px;
-            object-fit: cover;
+            height: 220px;
+            object-fit: contain;
+            object-position: center;
             display: block;
             cursor: pointer;
         }}
@@ -418,7 +419,7 @@ def home():
                 font-family: Arial, sans-serif;
                 background:
                     linear-gradient(rgba(92, 0, 0, 0.58), rgba(92, 0, 0, 0.58)),
-                    url('/static/campus.jpg');
+                    url('/static/images/campus.jpg');
                 background-size: cover;
                 background-position: center;
                 background-attachment: fixed;
@@ -483,7 +484,7 @@ def home():
     </head>
     <body>
         <div class="container">
-            <img src="/static/ra3.jpg" alt="WSSU Logo" class="hero-logo">
+            <img src="/static/images/wssu_logo.png" alt="WSSU Logo" class="hero-logo">
 
             <h1>Welcome to WSSU CS Open House</h1>
             <p>Connect with Computer Science and Information Technology at Winston-Salem State University.</p>
@@ -512,7 +513,7 @@ def Program():
                 font-family: Arial, sans-serif;
                 background:
                     linear-gradient(rgba(92, 0, 0, 0.68), rgba(92, 0, 0, 0.68)),
-                    url('/static/campus.jpg');
+                    url('/static/images/campus.jpg');
                 background-size: cover;
                 background-position: center;
                 background-attachment: fixed;
@@ -706,7 +707,7 @@ def Program():
     <body>
         <div class="container">
 
-            <img src="/static/ra3.jpg" alt="WSSU Banner" class="top-logo">
+            <img src="/static/images/ra3.jpg" alt="WSSU Banner" class="top-logo">
 
             <h1>Explore Computer Science & IT</h1>
             <p><b>Winston-Salem State University</b></p>
@@ -780,23 +781,23 @@ def Program():
                 <h2>Life in Computer Science & IT at WSSU</h2>
 
                 <div class="gallery-grid">
-                    <a class="gallery-card" href="/static/ra1.jpg" target="_blank">
-                        <img src="/static/ra1.jpg" alt="WSSU student life 1">
+                    <a class="gallery-card" href="/static/images/ra1.jpg" target="_blank">
+                        <img src="/static/images/ra1.jpg" alt="WSSU student life 1">
                         <p>Student collaboration and engagement.</p>
                     </a>
 
-                    <a class="gallery-card" href="/static/ra2.jpg" target="_blank">
-                        <img src="/static/ra2.jpg" alt="WSSU student life 2">
+                    <a class="gallery-card" href="/static/images/ra2.jpg" target="_blank">
+                        <img src="/static/images/ra2.jpg" alt="WSSU student life 2">
                         <p>Hands-on learning and technology opportunities.</p>
                     </a>
 
-                    <a class="gallery-card" href="/static/ra4.jpg" target="_blank">
-                        <img src="/static/ra4.jpg" alt="WSSU lab experience">
+                    <a class="gallery-card" href="/static/images/ra4.jpg" target="_blank">
+                        <img src="/static/images/ra4.jpg" alt="WSSU lab experience">
                         <p>Modern spaces for growth, creativity, and innovation.</p>
                     </a>
 
-                    <a class="gallery-card" href="/static/ra5.jpg" target="_blank">
-                        <img src="/static/ra5.jpg" alt="WSSU student success">
+                    <a class="gallery-card" href="/static/images/ra5.png" target="_blank" style="grid-column: 1 / -1; max-width: 650px; margin: 0 auto;">
+                        <img src="/static/images/ra5.png" alt="WSSU student success">
                         <p>Student success, mentorship, and campus pride.</p>
                     </a>
                 </div>
@@ -808,8 +809,8 @@ def Program():
                 <div class="video-card">
                     <h3>Student Experience at WSSU</h3>
 
-                    <video controls preload="metadata" playsinline poster="/static/ra3.jpg" style="width:100%; max-width:900px; border-radius:18px; box-shadow:0 12px 30px rgba(0,0,0,0.35);">
-<source src="/static/video/ram.mp4" type="video/mp4">                        Your browser does not support the video tag.
+                    <video controls preload="metadata" playsinline poster="/static/images/ra3.jpg" style="width:100%; max-width:900px; border-radius:18px; box-shadow:0 12px 30px rgba(0,0,0,0.35);">
+<source src="/static/images/video/ram.mp4" type="video/mp4">                        Your browser does not support the video tag.
                     </video>
 
                     <p style="margin-top:15px;">
@@ -981,7 +982,7 @@ def student_login():
 
     return red_style(f"""
     <div class="container">
-                     <img src="/static/ra3.jpg" 
+                     <img src="/static/images/ra3.jpg" 
      style="display:block;margin:20px auto;max-width:200px;width:100%;
      border-radius:16px;box-shadow:0 8px 20px rgba(0,0,0,0.2);
      background:white;padding:10px;">
@@ -1032,7 +1033,7 @@ def student_dashboard():
 
     return red_style(f"""
     <div class="container">
-                     <img src="/static/ra3.jpg" 
+                     <img src="/static/images/ra3.jpg" 
      style="max-width:220px;width:100%;margin-bottom:20px;border-radius:16px;
      box-shadow:0 8px 20px rgba(0,0,0,0.2);background:white;padding:10px;">
         <h1>Student Dashboard</h1>
@@ -1089,7 +1090,7 @@ def login():
 
     return red_style(f"""
     <div class="container">
-                     <img src="/static/ra3.jpg" 
+                     <img src="/static/images/ra3.jpg" 
      style="display:block;margin:20px auto;max-width:200px;width:100%;
      border-radius:16px;box-shadow:0 8px 20px rgba(0,0,0,0.2);
      background:white;padding:10px;">
@@ -1153,7 +1154,7 @@ def teacher():
 
     return red_style(f"""
     <div class="container">
-        <img src="/static/ra3.jpg"
+        <img src="/static/images/ra3.jpg"
              style="display:block;margin:20px auto;max-width:200px;width:100%;
              border-radius:16px;box-shadow:0 8px 20px rgba(0,0,0,0.2);
              background:white;padding:10px;">
@@ -1222,7 +1223,7 @@ def contact_registration(id):
 
     return red_style(f"""
     <div class="container">
-        <img src="/static/ra3.jpg"
+        <img src="/static/images/ra3.jpg"
              style="display:block;margin:20px auto;max-width:200px;width:100%;
              border-radius:16px;box-shadow:0 8px 20px rgba(0,0,0,0.2);
              background:white;padding:10px;">
@@ -1405,7 +1406,7 @@ def program_page(title, contact_html, body_html):
     <body>
         <div class="page-wrap">
             <div class="hero">
-                <img src="/static/ra3.jpg" alt="WSSU Banner">
+                <img src="/static/images/ra3.jpg" alt="WSSU Banner">
                 <h1>{title}</h1>
                 <p>Winston-Salem State University</p>
             </div>
